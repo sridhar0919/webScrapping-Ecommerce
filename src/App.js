@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
 import './App.css';
+import axios from 'axios';
+import Navibar from './components/Navibar';
+import Productcards from './components/Productcards';
 
 function App() {
+  const [productDetails, setproductDetails] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('https://webscrapping-ecommerceapi.herokuapp.com/')
+      .then((res) => setproductDetails(res.data.details));
+  }, []);
+  console.log(productDetails);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navibar />
+      <Productcards data={productDetails[0]} />
+      <Productcards />
+      <Productcards />
+      <Productcards />
+      <Productcards />
     </div>
   );
 }
