@@ -5,9 +5,9 @@ export default function Navibar() {
   return (
     <div>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-secondary">
           <div className="container-fluid">
-            <h1 className="navbar-brand" href="#">
+            <h1 className="navbar-brand text-light" href="#">
               Ecommerce
             </h1>
 
@@ -18,13 +18,14 @@ export default function Navibar() {
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-primary" type="submit">
                 Search
               </button>
             </form>
           </div>
         </nav>
       </div>
+      <h5 className="text-center mt-4">Showing results for mobiles</h5>
     </div>
   );
 }

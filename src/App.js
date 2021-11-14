@@ -16,11 +16,56 @@ function App() {
   return (
     <div>
       <Navibar />
-      <Productcards data={productDetails[0]} />
-      <Productcards />
-      <Productcards />
-      <Productcards />
-      <Productcards />
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[0]} />
+        ) : null}
+      </div>
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[1]} />
+        ) : null}
+      </div>
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[2]} />
+        ) : null}
+      </div>
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[3]} />
+        ) : null}
+      </div>
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[4]} />
+        ) : null}
+      </div>
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[5]} />
+        ) : null}
+      </div>
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[6]} />
+        ) : null}
+      </div>
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[7]} />
+        ) : null}
+      </div>
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[8]} />
+        ) : null}
+      </div>
+      <div>
+        {productDetails.length !== 0 ? (
+          <Productcards data={productDetails[9]} />
+        ) : null}
+      </div>
     </div>
   );
 }
