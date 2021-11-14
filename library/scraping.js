@@ -16,7 +16,7 @@ const getDetails = async () => {
     const elemSelector =
       '#container > div > div._36fx1h._6t1WkM._3HqJxg > div._1YokD2._2GoDe3 > div:nth-child(2)> div';
 
-    const keys = ['title', 'price', 'final_price', 'offer', 'img', 'rating'];
+    const keys = ['title', 'price', 'final_price', 'offer', 'imgUrl', 'rating'];
     const prodArr = [];
 
     $(elemSelector).each((i, element) => {
