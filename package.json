@@ -16,5 +16,7 @@
     "jade": "~1.11.0",
     "mongodb": "^4.1.4",
     "morgan": "~1.9.1"
-  }
+  },
+  "engines" : { "node" : ">=0.12" },
+  "engineStrict" : true 
 }
